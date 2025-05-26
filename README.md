@@ -586,7 +586,7 @@ $$ \text{Accuracy} = \frac{\sum TP \;\text{semua kelas}}{\text{Total data}}=\fra
 
 Selain metrik evaluasi di atas, terdapat pula:
 
-- Macro Average, yaitu rata-rata dari precision, recall, dan F1-score antar kelas tanpa mempertimbangkan jumlah data pada tiap kelas. Sehingga dapat dirumuskan dengan: $$\begin{align*} \text{Macro Precision} &=\frac{1}{n}\sum_{i=1}^n \text{Precision}_i\\ \text{Macro Recall} &= \frac{1}{n}\sum_{i=1}^n \text{Recall}_i \\ \text{Macro F1} &= \frac{1}{n} \sum_{i=1}^n F1_i\end{align*}$$ di mana $n$ menyatakan banyak kelas. Berdasarkan perhitungan sebelumnya, $$\begin{align*}
+- Macro Average, yaitu rata-rata dari precision, recall, dan F1-score antar kelas tanpa mempertimbangkan jumlah data pada tiap kelas. Sehingga dapat dirumuskan dengan: $$ \begin{align*} \text{Macro Precision} &=\frac{1}{n}\sum_{i=1}^n \text{Precision}_i\\ \text{Macro Recall} &= \frac{1}{n}\sum_{i=1}^n \text{Recall}_i \\ \text{Macro F1} &= \frac{1}{n} \sum_{i=1}^n F1_i\end{align*} $$ di mana $n$ menyatakan banyak kelas. Berdasarkan perhitungan sebelumnya, $$\begin{align*}
 \text{Macro Precision} &= \frac{0.50+ 0.61 + 0.92 + 0.94}{4} &&= 0.74\\
 \text{Macro Recall}    &= \frac{1.00+0.66+0.91+0.92}{4} &&= 0.87\\
 \text{Macro F1}        &= \frac{0.67+0.64+0.91+0.93}{4} &&= 0.79 \end{align*}$$ Ini menunjukkan bahwa model bekerja cukup merata di semua kelas, meskipun masih lebih lemah di kelas minoritas (misalnya kelas 1).
